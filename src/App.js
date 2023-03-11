@@ -5,7 +5,7 @@ import { Modal } from './components/modal/modal';
 import { FetchData } from './components/tabular/tabular';
 
 function App() {
-  return (
+  return ( 
     <div className="App">
       <h1 className='text-white bg-dark text-center m-2 p-2'>Employee Grid</h1>
       <BrowserRouter>

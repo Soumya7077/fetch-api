@@ -68,6 +68,6 @@ export function FetchData() {
 
                 </tbody>
             </table>          
-        </div>
+        </div>  
     )
 }
