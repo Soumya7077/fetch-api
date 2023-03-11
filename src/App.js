@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import { Modal } from './components/modal/modal';
+import { FetchData } from './components/tabular/tabular';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className='text-white bg-dark text-center m-2 p-2'>Employee Grid</h1>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<FetchData/>}></Route>          
+          <Route path='/:id' element = {<Modal/>}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
