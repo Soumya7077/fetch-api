@@ -2,6 +2,7 @@
 1. First copy github repo URL and open in Visual Studio Code.
 2. Clone it in vs code.
 3. Run the below command 
+    * npm install
     * npm install bootstrap => It will install bootstrap library for project.
     * npm install bootstrap-icons => It will install bootstrap-icons.
     * npm install jquery => It will install jquery for project.
