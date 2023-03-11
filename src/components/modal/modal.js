@@ -6,8 +6,8 @@ import { Link, useParams } from "react-router-dom";
 export function Modal()
 {
 
-    const [address,setAddress] = useState([]);
-    const [phone,setPhone] = useState([]);
+    const [address, setAddress] = useState([]);
+    const [phone, setPhone] = useState([]);
     const params = useParams();
 
     useEffect(()=>{
@@ -46,8 +46,7 @@ export function Modal()
                                 <dd className="col-8">{phone.phone}</dd>
                                 <dt className="col-4">Website : </dt>
                                 <dd className="col-8">{phone.website}</dd>
-                            </dl><hr/>
-                    
+                            </dl><hr/>                    
                         </div>
                     </div>
                 </div>

@@ -23,8 +23,7 @@ export function FetchData() {
         
 
     function HandleSearchChange(e){
-        const search = e.target.value;
-        
+        const search = e.target.value;        
         
         if(search.length > 0){
             const query = filterData.filter((item) => item.name.toLowerCase().includes(search));
@@ -34,10 +33,6 @@ export function FetchData() {
         }
         setSearchData(search);
     }
-
-
-
-
 
 
     return (
