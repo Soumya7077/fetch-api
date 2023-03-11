@@ -12,7 +12,7 @@ function App() {
         <Routes>
           <Route path='/' element={<FetchData/>} />          
           <Route path='/:id' element = {<Modal/>} />
-        </Routes>
+        </Routes> 
       </BrowserRouter>
     </div>
   );
